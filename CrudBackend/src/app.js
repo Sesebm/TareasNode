@@ -13,3 +13,13 @@ app.use("/", usersRouter)
 app.listen(3000, () => {
     console.log("Inicio en el puerto 3000");
   });
+
+ /*  
+ para testear el post
+ {
+    "first_name": "josee",
+    "last_name": "pepito",
+    "email": "123@gmail.com",
+    "password": "pepipi123",
+    "birthday": "1995/05/02"
+  } */
