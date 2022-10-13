@@ -28,7 +28,7 @@ const getAllProducts = () => {// Traer todas los productos
         id: id,
       },
     });
-    return response;//? Si el where no encuentra nada, retorna null
+    return response;// retorna null
   };
 
   const deleteProduct = async (id) => {

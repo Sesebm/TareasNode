@@ -1,7 +1,7 @@
-const db = require('./utils/database')
+const db = require('./src/utils/database')
 const express = require('express');
-const initModels = require('./models/initModels')
-const config = require('./config')
+const initModels = require('./src/models/initModels')
+const config = require('./src/config')
 
 
 // Authenticate database credentials
