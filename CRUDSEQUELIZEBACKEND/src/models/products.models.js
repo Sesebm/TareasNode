@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize'); // Importamos DataTypes de sequelize, esto nos ayudara a generar el tipo de dato que se guardara en nuestra base de datos
-const { db } = require('../utils/database'); //Aqui importamos la utilidad que creamos anteriormente
+const  db  = require('../utils/database'); //Aqui importamos la utilidad que creamos anteriormente
 
 const Products = db.define('products', { //Creamos un modelo Producs, accediendo a db.define()
 																			
@@ -23,7 +23,8 @@ const Products = db.define('products', { //Creamos un modelo Producs, accediendo
     isAvailable: {
         allowNull: false,
         type: DataTypes.BOOLEAN,
-    },
+        field: 'is_available'
+    }
 });
 
 module.exports = Products;

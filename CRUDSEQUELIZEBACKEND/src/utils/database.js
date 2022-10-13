@@ -7,7 +7,7 @@ const db = new Sequelize({
     host: config.db.host,
     username: config.db.username,
     password: config.db.password,
-    database: config.db.database
+    database: config.db.name
 });
 
-module.exports = { db };
+module.exports =  db ;
